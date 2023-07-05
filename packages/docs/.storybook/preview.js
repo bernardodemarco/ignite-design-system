@@ -13,6 +13,9 @@ const preview = {
         date: /Date$/,
       },
     },
+    themes: {
+      default: themes.dark,
+    }
   },
 };
 
