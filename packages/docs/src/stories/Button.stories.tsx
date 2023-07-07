@@ -5,8 +5,34 @@ import { ArrowRight } from '@phosphor-icons/react'
 export default {
   title: 'Form/Button',
   component: Button,
+  tags: ['autodocs'],
   args: {
     children: 'Send',
+    variant: 'primary',
+    size: 'medium',
+    disabled: false,
+  },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['small', 'medium'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: {
+      action: 'click',
+    },
   },
 } as Meta<ButtonProps>
 
