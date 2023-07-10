@@ -3,12 +3,11 @@ import { styled } from '../../styles'
 export const TextInputContainer = styled('div', {
   boxSizing: 'border-box',
   display: 'flex',
-  alignItems: 'baseline',
+  alignItems: 'center',
 
   backgroundColor: '$gray900',
   borderRadius: '$sm',
   border: '2px solid $gray900',
-  padding: '$3 $4',
 
   '&:has(input:focus)': {
     borderColor: '$ignite300',
@@ -17,6 +16,21 @@ export const TextInputContainer = styled('div', {
   '&:has(input:disabled)': {
     opacity: 0.5,
     cursor: 'not-allowed',
+  },
+
+  variants: {
+    size: {
+      small: {
+        padding: '$2 $3',
+      },
+      medium: {
+        padding: '$3 $4',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'medium',
   },
 })
 
