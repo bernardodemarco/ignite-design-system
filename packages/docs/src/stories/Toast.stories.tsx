@@ -2,7 +2,7 @@ import { StoryObj, Meta } from '@storybook/react'
 import { Toast, ToastProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Data Display/Toast',
+  title: 'Surfaces/Toast',
   component: Toast,
   tags: ['autodocs'],
   args: {
